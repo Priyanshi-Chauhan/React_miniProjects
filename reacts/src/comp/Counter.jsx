@@ -8,8 +8,8 @@ class Counter extends Component {
         return(
         <div>
         <img src={this.state.imageurl} alt=""></img>
-         <span>{this.format()}</span>
-         <button>increment</button></div>)
+         <span className= "badge badge-primary m-2">{this.format()}</span>
+         <button className = "btn btn-secondary btn-sm2">increment</button></div>)
     };
     format() {
         const {count} =this.state;
