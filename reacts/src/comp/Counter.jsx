@@ -7,15 +7,22 @@ class Counter extends Component {
          //   this.handleIncrement=this.handleIncrement.bind(this)
 
         //}
-        handleIncrement=()=> {
-            console.log("increment clicked",this);
+        handleIncrement=product=> {
+            console.log(product);
+            this.setState({count:this.state.count+1});
         }
         render() {
             return (
-                <div><button onClick={this.handleIncrement} className="btn btn-primary sm-2">Increment</button>
+                <div>
+                    <span className={this.badgeclas()}>{this.formatc()}</span><button onClick={this.handleIncrement} className="btn btn-primary sm-2">Increment</button>
                      </div>
-            )
-        };
+            );
+        }
+badgeclas() {
+    
+}
+
+
     }
  
 export default Counter;
