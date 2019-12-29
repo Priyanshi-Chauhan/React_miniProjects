@@ -9,11 +9,15 @@ class Kiki extends Component {
      }
     render() { 
         return (<div>
-            {this.state.counters.map(counter => <Counter key={counter.id} value={counter.value} selected={true} />)}
+            {this.state.counters.map(counter => <Counter key={counter.id} onDelete={this.handleDelete} value={counter.value} />)}
             
         </div>  
 
         );
+    }
+    handleDelete = counterId => {
+        const counters = this.state.counters.filter(c => c.id !== counterId);
+        this.setState({ counters});
     }
 }
  
