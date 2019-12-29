@@ -6,7 +6,7 @@ class Counter extends Component {
     tags: []
   };
   render() {
-    console.log(this.props);
+    
 
     let classes = this.getBadgeClasses();
     return (
