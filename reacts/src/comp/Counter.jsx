@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 class Counter extends Component {
   state = {
-    count: 0,
+    count: this.props.value,
     imageUrl: "http://picsum.photos/200",
     tags: []
   };
   render() {
+    console.log(this.props);
+
     let classes = this.getBadgeClasses();
     return (
       <div>
