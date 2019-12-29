@@ -2,8 +2,8 @@ import React, { Component } from "react";
 class Counter extends Component {
   state = {
     count: this.props.value,
-    imageUrl: "http://picsum.photos/200",
-    tags: []
+    //imageUrl: "http://picsum.photos/200",
+    //tags: []
   };
   render() {
     
@@ -11,12 +11,12 @@ class Counter extends Component {
     let classes = this.getBadgeClasses();
     return (
       <div>
-        <img src={this.state.imageUrl} alt=""></img>
+    
         <span style={{ fontSize: 20 }} className={classes}>
           {this.formatCount()}
         </span>
-        <button onClick = {() => this.handleIncrement()} className="btn btn-secondary btn-sm">increment</button>
-        {this.renderTags()}
+        <button onClick = {() => this.handleIncrement()} className="btn btn-secondary btn-sm">Increment</button>
+        <button className=" btn btn- primary btn-danger btm-sm m-3">Delete</button>     
 
       </div>
     );
@@ -31,16 +31,16 @@ class Counter extends Component {
     const { count } = this.state;
     return count === 0 ? "ZERO" : count;
   }
-  renderTags() {
-    if ((this.state.tags.length === 0)) return <p>there are no tags</p>;
-    return (
-      <ul>
-        {this.state.tags.map(tag => (
-          <li key={tag}>{tag}</li>
-        ))}
-      </ul>
-    );
-  }
+  //renderTags() {
+    //if ((this.state.tags.length === 0)) return <p>there are no tags</p>;
+    //return (
+     // <ul>
+       // {this.state.tags.map(tag => (
+         // <li key={tag}>{tag}</li>
+       // ))}
+      //</ul>
+    //);
+ // }
   handleIncrement = () => { 
     
     this.setState({count:this.state.count + 1}) 
