@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import Counter from "./comp/Counter";
+import Kiki from "./comp/Kiki";
 import "bootstrap/dist/css/bootstrap.css";
 
-ReactDOM.render(<Counter></Counter>, document.getElementById("root"));
+ReactDOM.render(<Kiki />, document.getElementById("root"));
