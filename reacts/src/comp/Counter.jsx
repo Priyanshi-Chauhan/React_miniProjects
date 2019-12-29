@@ -13,7 +13,7 @@ class Counter extends Component {
         <span style={{ fontSize: 20 }} className={classes}>
           {this.formatCount()}
         </span>
-        <button onClick={this.state.handleIncrement()}className="btn btn-secondary btn-sm">increment</button>
+        <button onClick = {this.handleIncrement} className="btn btn-secondary btn-sm">increment</button>
         {this.renderTags()}
 
       </div>
@@ -39,9 +39,9 @@ class Counter extends Component {
       </ul>
     );
   }
-  handleIncrement() {
+  handleIncrement = () => { 
     
-    console.log("increment clicked",this)
+    this.setState({count:this.state.count + 1}) 
   }
   
     
