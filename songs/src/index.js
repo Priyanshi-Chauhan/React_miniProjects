@@ -1,12 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-//import Component from "./Components";
-class App extends Component {
-  state = {};
-  render() {
-    return <Component />;
-  }
-}
-export default App;
+import Compo from "./Compo";
+import index from "./public";
+(";;;;;;");
+import faker from "faker";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Compo />, document.getElementById("root"));
