@@ -2,12 +2,11 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 //import Component from "./Components";
 class App extends Component {
-    state = {}
-    render() {
-        return (
-            <Component />)
-    };
-
-    exports App.default;
+  state = {};
+  render() {
+    return <Component />;
+  }
 }
-ReactDOM.render(< App />, document.getElementById("root"));
+export default App;
+
+ReactDOM.render(<App />, document.getElementById("root"));
