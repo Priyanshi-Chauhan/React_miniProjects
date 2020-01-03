@@ -4,12 +4,9 @@ import Compo from "./Compo";
 const App = () => {
   return (
     <div className="ui container comments">
-      <Compo />
-      <Compo />
-      <Compo />
-      <Compo />
-      <Compo />
-      <Compo />
+      <Compo person="Sam" />
+      <Compo person="Alex" />
+      <Compo person="Susu" />
     </div>
   );
 };
