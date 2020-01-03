@@ -12,12 +12,12 @@ const Compo = props => {
       </a>
       <div className="content">
         <a href="/" className="author">
-          sam
+          {props.person}
         </a>
         <div className="metadata">
-          <span>today at 6pm </span>
+          <span>{props.timeAgo} </span>
         </div>
-        <div>what a nice blog </div>
+        <div>{props.blog} </div>
       </div>
     </div>
   );
