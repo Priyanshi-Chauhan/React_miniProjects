@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import faker from "faker";
+
 //class Compo extends Component {
 //state = {};
 //render() {
