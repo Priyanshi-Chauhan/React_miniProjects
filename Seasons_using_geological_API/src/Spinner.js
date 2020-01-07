@@ -8,4 +8,7 @@ const Spinner = props => {
     </div>
   );
 };
+Spinner.defaultProps = {
+  messga: "loading!!"
+};
 export default Spinner;
