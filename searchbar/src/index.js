@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import SearchBar from "./Components/SearchBar";
+import App from "./Components/App";
 class Index extends React.Component {
   render() {
     return (
       <div>
-        <SearchBar />
+        <App />
       </div>
     );
   }
